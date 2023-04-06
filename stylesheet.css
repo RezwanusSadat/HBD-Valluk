@@ -988,45 +988,45 @@ audio {
 	left: 0;
 }
 
-.prithibi1{
+.prithibi1 {
 	position: relative;
 	left: 10%;
 }
-.prithibi2{
+.prithibi2 {
 	position: relative;
 	right: 10%;
 }
 
 .prithibi .rope {
-    top: 0px;
-    height: auto;
-    width: auto;
-    left: 0px;
-    background: transparent;
+	top: 0px;
+	height: auto;
+	width: auto;
+	left: 0px;
+	background: transparent;
 }
 
 .prithibi1 img {
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-image: url("./images/IMG20230112165715.jpg");
-    background-size: 130px;
-    background-position: -5px 40%;
-    background-repeat: no-repeat;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url("./images/IMG20230112165715.jpg");
+	background-size: 130px;
+	background-position: -5px 40%;
+	background-repeat: no-repeat;
 }
 .prithibi2 img {
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-image: url("./images/IMG20230221121727.jpg");
-    background-size: 200px;
-    background-position: -70px 25%;
-    background-repeat: no-repeat;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url("./images/IMG20230221121727.jpg");
+	background-size: 200px;
+	background-position: -70px 25%;
+	background-repeat: no-repeat;
 }
 .prithibi1 .rope img,
-.prithibi2 .rope img{
+.prithibi2 .rope img {
 	position: relative;
 	background: none;
 	height: 1000px;
@@ -1065,10 +1065,10 @@ audio {
 	background-repeat: no-repeat;
 }
 
-.prithibi3{
+.prithibi3 {
 	left: -5%;
 }
-.prithibi4{
+.prithibi4 {
 	right: -5%;
 }
 
@@ -1494,13 +1494,13 @@ audio {
 	display: none;
 }
 .cake {
-	top: 35vh;
+	top: 30vh;
 }
 .cake-cover {
 	margin-top: 50px;
 }
 .message {
-	margin-top: 500px;
+	margin-top: 400px;
 	display: none;
 }
 .message p {
@@ -1537,4 +1537,46 @@ audio {
     	.container {
     		-webkit-transform: scale(0.9);
     	}
-    }*/
+}*/
+
+.star {
+	position: fixed;
+	top: -1vh;
+	/* font-size: 20px; */
+	animation: starRain 2s linear forwards;
+	transition: transform 3s;
+}
+.star img{
+	width: 20px;
+	/* animation: rotation 3s linear forwards; */
+	/* transition: transform 3s; */
+}
+/* .star img{
+    -webkit-transform: rotate(360deg);
+    -webkit-transition-duration: 3s;
+    -webkit-transition-delay: now;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+} */
+@keyframes starRain {
+	to {
+		transform: translateY(105vh);
+	}
+}
+
+@keyframes rotation {
+	0%{
+		transform: rotate(0deg);
+	}
+	33%{
+		transform: rotate(-180deg);
+	}
+	66%{
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+
